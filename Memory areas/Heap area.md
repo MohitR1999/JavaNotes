@@ -1,0 +1,6 @@
+- For every JVM, one heap area is available
+- Heap area will be created at the time of JVM startup
+- Objects and corresponding instance variables will be stored in the heap area
+- Every array in java is object, hence arrays will also be stored in the heap area
+- Heap area can be accessed by multiple threads and hence the data stored in the heap memory is not thread safe
+- Heap area need not be contiguous

@@ -1,0 +1,6 @@
+- For every JVM, one method area will be available
+- Method area will be created at the time of JVM startup
+- Inside method area, class level binary data including static variables will be stored
+- Constant pools of a class will be stored inside method area
+- Method area can be accessed by multiple threads simultaneously, so its data is not thread safe
+- Method area memory location need not to be contiguous

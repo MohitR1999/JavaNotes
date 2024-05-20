@@ -1,0 +1,7 @@
+- Whenever JVM loads and runs a java program, it needs memory to store several things like bytecode, objects, variables etc.
+- Total JVM memory is organised into the following 5 categories
+	- Method area [[Method area]]
+	- Heap area [[Heap area]]
+	- Stack area
+	- PC registers
+	- Native method stacks
