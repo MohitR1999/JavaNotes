@@ -2,6 +2,12 @@
 - Total JVM memory is organised into the following 5 categories
 	- Method area [[Method area]]
 	- Heap area [[Heap area]]
-	- Stack area
-	- PC registers
-	- Native method stacks
+	- Stack area [[Stack Memory]]
+	- PC registers [[Program Counter (PC) registers]]
+	- Native method stacks [[Native method stacks]]
+- Method area, heap area, and stack area are considered as important memory areas with respect to programmer
+- Method area and heap area are per JVM whereas stack area, PC registers and native method stack are per thread
+- Static variables will be stored in method area
+- Instance variables will be stored in heap area
+- Local variables will be stored in stack area
+- ![[storage of different variables in memory areas.png]]

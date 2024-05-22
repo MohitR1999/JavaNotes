@@ -1,0 +1,21 @@
+#### Runtime stack
+- For every thread, JVM will create a separate stack, at the time of thread creation.
+- Each and every method call performed by that thread will be stored in the stack, including local variables also.
+- After completing a method, the corresponding entry from the stack will be removed. After completing all method calls, the stack will become empty and that empty stack will be destroyed by the JVM just before terminating the thread.
+- Each entry in the stack is called stack frame or activation record.
+- The data stored in the stack is available for the corresponding thread only and not available to the remaining threads, hence this data is thread safe.
+#### Stack frame structure
+- Each stack frame contains three parts: Local variable array, operand stack, frame data
+	- ##### Local variable array
+		- It contains all parameters and local variables of the method
+		- Each slot in the array is of 4 bytes
+		- Values of type int, float, and reference, occupy 1 entry in the array
+		- Values of type double and long occupy two consecutive entries in the array
+		- Values of type byte, short and char will be converted to int type before storing and occupy 1 slot. But the way of storing boolean values is varied from JVM to JVM, but most of the JVMs follow 1 slot for boolean values
+	- ##### Operand stack
+		- JVM uses operand stack as workspace
+		- Some instructions can push the values to operand stack, and some instructions can pop values from operand stack, and some instructions can perform required operations
+		- ![[Working of operand stack.png]]
+	- ##### Frame data
+		- Frame data contains all the symbolic references related to that method
+		- It also contains a reference to exception table which provides corresponding catch block information in the case of exceptions

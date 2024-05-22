@@ -1,6 +1,6 @@
 {
 	"nodes":[
-		{"id":"fd57441e4d837f44","type":"group","x":-700,"y":-140,"width":1980,"height":520,"label":"Memory areas of JVM"},
+		{"id":"fd57441e4d837f44","type":"group","x":-700,"y":-140,"width":2180,"height":520,"label":"Memory areas of JVM"},
 		{"id":"f05ad246576a9354","type":"group","x":-120,"y":-1880,"width":600,"height":1520,"label":"Class loader subsystem"},
 		{"id":"49d52123c66517e4","type":"group","x":-440,"y":860,"width":380,"height":210,"label":"Execution engine"},
 		{"id":"3e567985e2f234a5","type":"text","text":"**Loading:** \n- It is the process of reading class files and storing corresponding binary data in method area of JVM.\n- For each class file, JVM will store corresponding information in method area\n\t- Fully Qualified name of class\n\t- Fully qualified name of immediate parent class\n\t- Method info, variable info, constructor information\n\t- Modifier information\n\t- Constant pool information\n- After loading .class file, immediately JVM creates an object for that loaded class, on the heap memory of type java.lang.Class\n- The class Class object can be used by the programmer to get class level information like methods info, or variable info, constructors info etc.\n- For every loaded type, only one class Class object will be created, even though we are using the class multiple times in our program","x":-100,"y":-1860,"width":560,"height":560},
@@ -9,13 +9,13 @@
 		{"id":"7f10a5f5dc639ebe","type":"text","text":".class file","x":-420,"y":-1160,"width":135,"height":60,"color":"#5b40bf"},
 		{"id":"47b92d9e12e87e4d","type":"file","file":"JVM concepts/Types of class loaders.md","x":630,"y":-1900,"width":720,"height":640},
 		{"id":"a2fe73d470c71cc6","type":"text","text":"Note: While loading, linking and initialization, if we encounter any error, we will get runtime exception saying *java.lang.LinkageError* ","x":700,"y":-995,"width":580,"height":75,"color":"1"},
+		{"id":"ac7eb81fc86f0c16","type":"file","file":"JVM concepts/Memory areas/Method area.md","x":-680,"y":-101,"width":420,"height":440},
+		{"id":"e5c05a751e217e24","type":"file","file":"JVM concepts/Memory areas/Heap area.md","x":-240,"y":-100,"width":420,"height":439},
 		{"id":"09edb8706c96e8a4","type":"text","text":"**Native method libraries**","x":660,"y":1040,"width":280,"height":60},
 		{"id":"2f2f2ac40b6af5eb","type":"text","text":"Java Native Interface (JNI)","x":180,"y":1009,"width":276,"height":63},
-		{"id":"ac7eb81fc86f0c16","type":"file","file":"JVM concepts/Memory areas/Method area.md","x":-680,"y":-101,"width":420,"height":440},
-		{"id":"e5c05a751e217e24","x":-240,"y":-100,"width":420,"height":439,"type":"file","file":"JVM concepts/Memory areas/Heap area.md"},
-		{"id":"e481b8a85aa6b9a7","type":"text","text":"PC registers","x":1060,"y":-80,"width":160,"height":160},
-		{"id":"39d0b3a8bd2e761b","type":"text","text":"Native method stack","x":800,"y":-80,"width":220,"height":160},
-		{"id":"85baeae33433eb50","type":"text","text":"Stack area","x":1060,"y":120,"width":160,"height":160}
+		{"id":"65094d3a7468e55b","type":"file","file":"JVM concepts/Memory areas/Stack Memory.md","x":200,"y":-100,"width":420,"height":439},
+		{"id":"130e23361702d169","x":640,"y":-100,"width":400,"height":439,"type":"file","file":"JVM concepts/Memory areas/Program Counter (PC) registers.md"},
+		{"id":"39d0b3a8bd2e761b","type":"text","text":"Native method stack","x":1200,"y":0,"width":220,"height":160}
 	],
 	"edges":[
 		{"id":"e8aa6c368892884d","fromNode":"7f10a5f5dc639ebe","fromSide":"right","toNode":"f05ad246576a9354","toSide":"left","color":"#510b86"},

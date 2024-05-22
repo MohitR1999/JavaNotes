@@ -1,0 +1,2 @@
+- For every thread JVM will create a separate native method stack
+- All native method calls invoked by the thread will be stored in the corresponding native method stack
